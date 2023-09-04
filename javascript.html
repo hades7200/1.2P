@@ -33,21 +33,21 @@
 <body>
 
 <header>
-    <h1>"JavaScript Concepts"</h1>
+    <h1>JavaScript Concepts</h1>
 </header>
 
 <div class="method-container">
     <h2>String Methods</h2>
-    <!-- JavaScript code -->
+  
     <script>
         // String methods
-        var originalString = "   Hello, World!   ";
+        var originalString = "   Ishan Seth   ";
         var length = originalString.length;
         var trimmedString = originalString.trim();
         var substring = originalString.substr(8, 5);
         var uppercaseString = originalString.toUpperCase();
         var lowercaseString = originalString.toLowerCase();
-        var replacedString = originalString.replace("World", "Universe");
+        var replacedString = originalString.replace("Seth", "Doe");
 
         document.write("<p>Original String: '" + originalString + "'</p>");
         document.write("<p>String Length: " + length + "</p>");
@@ -56,50 +56,52 @@
         document.write("<p>Uppercase String: '" + uppercaseString + "'</p>");
         document.write("<p>Lowercase String: '" + lowercaseString + "'</p>");
         document.write("<p>Replaced String: '" + replacedString + "'</p>");
-        </script>
+    </script>
 </div>
 
 <div class="method-container">
     <h2>Number Methods</h2>
-    <!-- JavaScript code -->
+   
     <script>
         // Number methods
-        var number = 42.56789;
+        var number = 44.75;
         var fixedNumber = number.toFixed(2);
-        var exponentialNumber = number.toExponential(3);
-        var precisionNumber = number.toPrecision(4);
+        var exponentialNumber = number.toExponential(2);
+        var precisionNumber = number.toPrecision(3);
         var parsedNumber = parseFloat("3.14");
+        var string = number.toString();
 
         document.write("<p>Number: " + number + "</p>");
         document.write("<p>Fixed Number: " + fixedNumber + "</p>");
         document.write("<p>Exponential Number: " + exponentialNumber + "</p>");
         document.write("<p>Precision Number: " + precisionNumber + "</p>");
         document.write("<p>Parsed Number: " + parsedNumber + "</p>");
-        </script>
+        document.write("<p>String Number: " + string + "</p>");
+    </script>
 </div>
 
 <div class="method-container">
     <h2>Array Methods</h2>
-    <!-- JavaScript code -->
+    
     <script>
         // Array methods
-        var fruits = ["apple", "banana", "cherry"];
+        var fruits = ["strawberry", "banana", "kiwi"];
         var joinedFruits = fruits.join(", ");
         var slicedFruits = fruits.slice(1, 3);
         var poppedFruit = fruits.pop();
-        fruits.push("orange");
-        var indexBanana = fruits.indexOf("banana");
+        fruits.push("mango");
+        var indexKiwi = fruits.indexOf("kiwi");
 
         document.write("<p>Fruits: " + fruits.join(", ") + "</p>");
         document.write("<p>Sliced Fruits: " + slicedFruits.join(", ") + "</p>");
         document.write("<p>Popped Fruit: " + poppedFruit + "</p>");
-        document.write("<p>Index of 'banana': " + indexBanana + "</p>");
-        </script>
+        document.write("<p>Index of 'kiwi': " + indexKiwi + "</p>");
+    </script>
 </div>
 
 <div class="method-container">
     <h2>Date Methods</h2>
-    <!-- JavaScript code -->
+   
     <script>
         // Date methods
         var currentDate = new Date();
@@ -115,24 +117,31 @@
         document.write("<p>Day: " + day + "</p>");
         document.write("<p>Hours: " + hours + "</p>");
         document.write("<p>Minutes: " + minutes + "</p>");
-        </script>
+    </script>
 </div>
 
 <div class="method-container">
     <h2>Function Methods</h2>
-    <!-- JavaScript code -->
+    
     <script>
-        // Function methods
-        function greet(name) {
-            return "Hello, " + name + "!";
+        // Say hey
+        function hey(name) {
+            return "Hey, " + name + "!";
         }
-        var functionString = greet.toString();
-        var functionCall = greet("Alice");
+        var functionString = hey.toString();
+        var function1 = hey("Ishan");
+        //multiply
+        function myFunction(x, y) {
+            return x * y;
+        }
 
-        document.write("<p>Function: " + functionString + "</p>");
-        document.write("<p>Function Call: " + functionCall + "</p>");
-       </script>
+        var function2 = myFunction(9, 7);
+
+        document.write("<p>Function 1: " + function1 + "</p>");
+        document.write("<p>Function 2: " + function2 + "</p>");
+    </script>
 </div>
 
 </body>
 </html>
+
